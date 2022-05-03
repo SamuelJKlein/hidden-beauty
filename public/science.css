@@ -1,0 +1,30 @@
+body {
+    color: gold !important;
+    background-color: blue;
+    font-family: 'comic sans', chalkboard;
+}
+.hg-navbar a {
+    color: red !important; 
+     border-left: 5px solid blue  !important;
+}
+
+.active a {
+    color: teal;
+  
+    border-left: 5px solid gold  !important;
+}
+.chapter-list {
+    border-left: 5px solid gold  !important;
+}
+.hg-navbar a {
+ 
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+   
+}
+.hg-main-menu h1 {
+     text-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.header {
+    border-bottom: 8px solid rgb(255, 255, 255);
+    padding-bottom: 10px;
+}

@@ -1,0 +1,264 @@
+body {
+    color: rgb(44, 62, 80);
+    font-family: Optima;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    margin-right: 15%;
+    margin-top: 1.5rem;
+    background-color: white;
+    transition: 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body ::selection {
+    color: rgb(44, 62, 80);
+    background-color: white;
+}
+
+.main-text ::selection {
+    color: white;
+    background-color: teal;
+}
+
+img {
+    margin: auto;
+    width: 100%;
+}
+
+.btn-primary {
+    margin-bottom: 1rem !important
+}
+
+.hg-navbar a {
+    font-size: 2.3rem;
+    color: rgb(44, 62, 80);
+    border-left: 5px solid rgb(255, 255, 255);
+    padding-left: 0.5rem;
+    /* text-shadow: 0px 0px 30px rgb(0, 0, 0); */
+
+}
+
+.page-list div {
+    width: 100%;
+    border-bottom: 2px solid rgb(237, 237, 237);
+    padding-left: 2rem;
+
+}
+
+.page-list div a {
+    color: black;
+}
+
+a :hover {
+    /* text-decoration: none;  */
+    color: rgb(0, 77, 77)
+}
+
+a {
+    color: teal;
+    transition: 0.3s;
+
+}
+
+.hg-navbar a :hover {
+    font-size: 10rem;
+    text-decoration: none;
+    color: teal;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+
+    /* font-style: italic; */
+}
+
+h4 {
+    font-size: 2rem;
+
+    font-style: italic;
+    border-left: 9px solid teal;
+    padding-left: 10px;
+}
+
+table,
+th {
+    border: 1px solid black;
+}
+
+table {
+    width: 100% !important;
+}
+
+th,
+td {
+    padding: 6px;
+}
+
+.verse {
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+
+.chapter {
+    font-size: 2.8rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.quote {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.footnote {
+    font-size: 1.6rem;
+}
+
+.header {}
+
+.hg-mobile-menu {
+    position: relative;
+    z-index: 9999 !important;
+
+}
+
+.hg-navbar {
+    /* position: -webkit-sticky;
+    position: sticky; */
+    top: 0px;
+    margin-top: 5rem;
+    height: 100%;
+
+
+
+    display: block;
+
+    overflow-y: auto;
+    /* -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none; */
+
+}
+
+.header {
+    border-bottom: 8px solid teal;
+    padding-bottom: 10px;
+}
+
+.next {
+    margin: auto;
+
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    color: teal
+}
+
+.littlemenu a {
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+    font-size: 1.8rem;
+}
+
+.main-text {
+    /* float: right; */
+    font-size: 1.6rem;
+    margin-right: 8%;
+    padding-left: 10%;
+}
+
+.main-text h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar-header a {
+    color: white;
+
+}
+
+.nav-b {
+    font-size: 2.3rem;
+
+}
+
+
+/* .littlemenu {
+    position: sticky; 
+    top: 20px;
+} */
+
+.active a {
+    color: teal;
+
+    border-left: 5px solid teal;
+}
+
+.chapter-active {
+    border-left: 5px solid teal !important;
+}
+
+#active {
+    color: black;
+    padding-left: 0.5rem;
+    border-left: 5px solid teal;
+}
+
+#tealarea {
+    background-color: teal;
+}
+
+#chapterList {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    padding-left: 15px;
+    font-size: 2.5rem;
+    z-index: 9999 !important;
+}
+
+#overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1
+}
+
+@media screen and (max-width: 767px) {
+    .hg-main-menu {
+        display: none !important;
+        position: sticky;
+    }
+
+    .navbar {}
+
+    #tealarea {
+        position: sticky;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hg-mobile-menu {
+        display: none !important;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .main-text {
+        float: right;
+    }
+}

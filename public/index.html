@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./mystyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/f29756f47b.js" crossorigin="anonymous"></script>
+</head>
+<script>
+  var refTagger = {
+    settings: {
+      bibleVersion: "ESV",
+      roundCorners: true,
+      socialSharing: ["google"],
+      tagChapters: true,
+      customStyle: {
+        heading: {
+          backgroundColor: "#008080",
+          color: "#ffffff",
+          fontFamily: "Optima, Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif",
+          fontSize: "16px"
+        },
+        body: {
+          color: "#000000",
+          fontFamily: "Optima, Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif"
+        }
+      }
+    }
+  };
+  (function (d, t) {
+    var n = d.querySelector("[nonce]");
+    refTagger.settings.nonce = n && (n.nonce || n.getAttribute("nonce"));
+    var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    g.src = "https://api.reftagger.com/v2/RefTagger.js";
+    g.nonce = refTagger.settings.nonce;
+    s.parentNode.insertBefore(g, s);
+  }(document, "script"));
+
+
+
+
+
+
+</script>
+
+<script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<body data-spy="scroll" data-offset="150">
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
